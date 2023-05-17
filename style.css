@@ -1,0 +1,147 @@
+/*--------font-----------*/
+
+
+@font-face {
+	font-family: 'SourceSerif';
+	src: url('fonts/SourceSerif4-Bold.woff2') format('woff2');
+	font-weight: bold;
+  }
+
+@font-face {
+	font-family: 'SourceSerif';
+	src: url('fonts/SourceSerif4-Regular.woff2') format('woff2');
+	font-weight:normal;
+  }
+  
+@keyframes stripes {
+    100% {
+      background-position: 100px 0, 100px 0, 100px 0;
+    }
+  }
+
+
+body {
+  background-color:#0E0018;
+	font-family: 'SourceSerif';
+	line-height: 1.5;
+	font-size: 1.25rem;
+	padding: 0;
+	margin: 0;
+}
+
+.title{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('img/planet.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.img_container{
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.text_container{
+    width: 60%;
+    text-align: justify;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.box {
+    display: inline-block;
+    height: 250px;
+    width: 40%;
+    word-wrap: break-word;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+hr{
+    border-style: none;
+    border-color: #fff;
+    border-top-style: dotted;
+    border-width: 12px;
+    width: 7%;
+}
+
+h1,h2,h3,p{
+    text-align: center;
+}
+
+h1,h2,h3 {
+	font-family: "SourceSerif", sans-serif;
+
+	line-height: 1.1;
+	font-weight: bold;
+}
+
+h1 {
+    background-image: url('img/pattern.png');
+    color: #fff;
+    color: transparent;
+    background-size: contain;
+    -webkit-background-clip: text;
+    filter: drop-shadow(0px -3px 1px rgba(0, 0, 0, 1));
+
+    font-size: 7.7rem;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    animation: stripes 5s infinite alternate;
+  }
+
+h2{
+    font-size: xx-large;
+    color: #0F4C75;
+    text-shadow:
+    -2px -2px 0 #fff,
+    2px -2px 0 #fff,
+    -2px 2px 0 #fff,
+    2px 2px 0 #fff;
+}
+
+h3{
+    color: #fff;
+    font-size: 1.7rem;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    filter: drop-shadow(0px -2px 1px rgba(0, 0, 0, 1));
+}
+
+
+p {
+    color: #fff;
+	font-family: "SourceSerif", sans-serif;
+	font-weight: normal;
+  text-align: justify;
+}
+
+li{
+  color: #fff
+}
